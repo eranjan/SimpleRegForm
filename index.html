@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>ES6 Features</title>
+</head>
+
+<body>
+  <h1>Student Registration</h1>
+  <div>
+    <form onSubmit="return onSubmit()">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName">
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <label for="birthDate">Birth Date</label>
+      <input type="date" name="birthDate" id="birthDate">
+      <select name="gender" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <input type="submit" value="Submit">
+      <input type="button" value="Count Males" onclick="return countStudents()">
+      <input type="button" value="Count Females" onclick="return countStudents('Female')">
+      <input type="button" value="Get Student List" onclick="return getStudentList()">
+    </form>
+  </div>
+</body>
+
+</html>
